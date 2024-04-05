@@ -1,0 +1,10 @@
+<!-- para saber el valor de la signals  "menuItems" se debe colocar enter () =>> menuItems()  -->
+
+<ul class="list-group">
+  <li *ngFor="let item of menuItems()" [routerLink]="[ item.route ]"  routerLinkActive="active" class="list-group-item">
+    {{ item.title }}
+  </li>
+</ul>
+
+
+
